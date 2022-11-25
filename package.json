@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@types/nodemailer-mailgun-transport": "^1.4.3",
     "nodemailer-mailgun-transport": "^2.1.5"
   }
 }

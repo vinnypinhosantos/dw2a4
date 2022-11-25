@@ -1,11 +1,11 @@
 import { MailAdapter, SendMailData } from "../mail-adapter";
 
-const nodemailer = require('nodemailer')
-const nodemailMailgun = require('nodemailer-mailgun-transport')
+import nodemailer from 'nodemailer';
+import nodemailMailgun from 'nodemailer-mailgun-transport';
 
 const auth = {
     auth: {
-        api_key: process.env.MAILGUN_API_KEY,
+        api_key: "key-" + process.env.MAILGUN_API_KEY,
         domain: 'sandbox0f91b730368841bb8d773ae2a7df8240.mailgun.org'
     }
 }
