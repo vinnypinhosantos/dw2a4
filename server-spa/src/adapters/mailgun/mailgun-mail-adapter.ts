@@ -11,8 +11,8 @@ export class MailgunMailAdapter implements MailAdapter {
     async sendMail({subject, body, email}: SendMailData) {
     
         await mg.messages.create(email, {
-            from: `User <${email}>`,
-            to: ["test@example.com"],
+            from: `Vinicius <vinnypinhosantos@gmail.com>`,
+            to: `${email}`,
             subject,
             html: body
         })
