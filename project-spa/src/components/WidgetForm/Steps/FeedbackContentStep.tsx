@@ -28,8 +28,8 @@ onFeedbackSent }: FeedbackContentStepProps) {
         await api.post('/feedbacks', {
             type: feedbackType,
             comment,
-           screenshot,
-          email
+            screenshot,
+            email
         })
 
         setIsSendingFeedback(false)

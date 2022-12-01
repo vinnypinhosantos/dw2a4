@@ -20,3 +20,11 @@ model Feedback {
 
   @@map("feedbacks")
 }
+
+model Note {
+  id String @id @default(uuid())
+
+  texto String
+
+  @@map("notes")
+}
