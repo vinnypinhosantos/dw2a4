@@ -1,0 +1,23 @@
+body {
+    background-color: #808080;
+}
+
+.titulo {
+    color: black;
+    text-align: center;
+}
+
+.nome-aluno {
+    color: white;
+    text-align: center;
+}
+
+.nome-prof {
+    color: white;
+    text-align: center;
+
+}
+
+.atividades {
+    text-align: center;
+}
