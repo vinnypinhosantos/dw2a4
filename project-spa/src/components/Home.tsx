@@ -1,19 +1,13 @@
 import { useState } from "react";
-import { AddNotes, Note } from "./Notes/AddNotes";
-import { NotesList } from "./Notes/NotesList";
+import { CaesarForm } from "./CaesarForm";
 
-export function Home() {
-    const [notes, setNotes] = useState<Note[]>([])
 
-    const handleAddNotes = (note: Note) => {
-        console.log(note)
-        setNotes([...notes, note])
-    }
-
-    return (
-    <div>
-        <AddNotes onAddNotes={handleAddNotes}/>
-        <NotesList notes={notes}/>
-    </div>    
+export function Home () {
+   
+    return(
+        <>
+        <span className="text-4xl leading-3 flex justify-center p-10">Cifra de César</span>
+        <CaesarForm />
+        </>
     )
 }
